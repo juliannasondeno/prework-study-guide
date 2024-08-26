@@ -25,32 +25,54 @@
           <li>The p element represents a paragraph or block of text.</li>
           <li>The ul, ol, and li elements represent unordered lists, ordered lists, and list items.</li>
           <li>The img element contains information about images that are displayed on the webpage. 
-          <li>The src attribute defines the location of the image.</li>
-          <li>The alt attribute contains a text string that describes the appearence and functionality of the image.</li>
+          <li>The src attribute defines the location of an image or link.</li>
+          <li>The alt attribute contains a text string that describes the appearance and functionality of the image.</li>
           <li>The br element creates a line of empty space, or line break, between two blocks of content.</li>
           <li>The a element, or anchor, creates links to the same webpage or other webpages.</li>
           <li>The link element creates a connection to the external file.</li>
-          <li>The href attribute specifies the location of a external resource.</li>
+          <li>The rel attribute specifies the relationship between the current document and the linked document resource. </li>
+          <li>The href attribute specifies the location, or URL, of the external resource.</li>
+          <li>The section element contains a class attributes which adds styles to certain elements by assigning the rule with a class selector in CSS.</li>
+          <li>The script element is used to embed executable code and commonly refers to JavaScript code.</li>
         </ul>
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
+          <li>Inline styles apply to a specific HTML tag, using a style attribute to style a particular page element only.</li>
+          <li>Internal style sheets contain CSS rules for the webpage in the head section of the HTML file.</li>
+          <li>External style sheets use a separate CSS file linked within the head section of the HTML file.</li>
           <li>A margin indicates how much space there is around the outside of an element.</li>
           <li>A padding indicates how much space there is around the content inside an element.</li>
+          <li>A border surrounds the padding and its content and is on the inside of the margin.</li>
+          <li>Declarations contain the property applied and the value of the property.</li>
+          <li>The * symbol applies a rule to all the elements visible on the page.</li>
+          <li>A comma combines two selectors into a single CSS rule, so the declarations affect both selectors.</li>
+          <li>The width, height, background-color, and color can be adjusted within the header and footer selectors.</li>
+          <li>Semantic references and hexadecimal code, or hex #, both refer to and assign colors.</li>
+          <li>The text-align rule is a positioning property that can adjust headings, paragraphs, and lists.</li>
+          <li>The img selector assigns property values to any image element.</li>
+          <li>The display property assigned with the block value assigns each image to start on a new line.</li>
+          <li>The height, width, margin-left, and margin-right can be adjusted within the img selector.</li>
+          <li>The padding and font size rule can adjust paragraphs and lists.</li>
+          <li>The box-shadow property adds shadow effects around an elements frame and defines the width of the shadow on the x and y axis.</li>
+          <li>A period preceding a word designates a class selector. Any HTML element assigned to the class will gain those CSS properties.</li>
         </ul>
       </section>
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch you are currenlty on</li>
-          <li>git branch: lists all branches</li>
+          <li>git status: checks what branch you are currently on and shows modifided files in working directory staged for next commit</li>
+          <li>git branch: lists all branches and the current branch will be highlighted</li>
+          <li>git branch branch-name: creates a new branch at the current commit</li>
+          <li>git merge branch-name: merges the specified branch's history into the current branch</li>
           <li>git checkout branch-name: switches to the branch named</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
           <li>git add file-name: adds the modifications of the file named in the current working branch to the staging area</li>
           <li>git add -A: adds all modifications in the current working branch to the staging area</li>
+          <li>git reset file-name: unstage a file while retaining the changes in working directory</li>
           <li>git commit -m "descriptive message": commits or saves staged changes with a message</li>
-          <li>git pull origin branch-name: receives and merges any commits from thr tracking remote branch</li>
+          <li>git pull origin branch-name: receives and merges any commits from the tracking remote branch</li>
           <li>git push origin branch-name: sends local branch commits to the remote repository branch</li>
           <li>git config --global user.name "name": sets a name that is identifiable for credit when version history is viewed</li>
           <li>git config --global user.email "email": sets an email address that will be associated with each history marker</li>
@@ -60,7 +82,31 @@
         <h2>JavaScript</h2>
         <ul>
           <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>A string variable is a sequence of characters used to represent text contained within quotation marks.</li>
+          <li>A Boolean variable is a logical data type that can only have the values true or false.</li>
+          <li>An array stores multiple values under a single variable name by attaching a number, or index, to each item starting at 0.
+          <li>An array can contain different types of data such as string variables, number variables, and Boolean variables.</li>
+          <li>A semicolon is used to end a statement and curly brakets surround code that will be executed.</li>
+          <li>The assignment operator, = , assigns a value to a variable.</li>
+          <li>The strictly equal operator, === , checks to see if two values are equal and returns a Boolean result.</li>
+          <li>The console.log method logs the variable to the web console in the browser.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>An if statement is a type of conditional that executes a block of code if the condition is true.</li>
+          <li>An else if statement allows for more than one condition.</li>
+          <li>A for loop is used to repeat a single block of code by using the pattern of index numbers to perform a task on all items in an array.</li>
+          <li>The let keyword declares a variable and allows the value to be reassigned.</li>
+          <li>A for loop begins with the for keyword, contains a three part conditional statement, and a code block that defines what will be repeated.</li>
+          <li>The three part conditional statement in a for loop contains a starting point, a condition, and a pattern.</li>
+          <li>The starting point declares a variable and its value; to start at the beginning of the array, set the value to zero.</li>
+          <li>The condition uses the length property, variablename.length, to state that the variable must be less than the length of the array.</li>
+          <li>The pattern allows the array to repeat over each item; x+1 or x++ increases the variable by one .  </li>
+          <li>A function is a reusable block of code that contains instructions on how to perform a specific task.</li>
+          <li>A function must be declared and called in order to be executed.</li>
+          <li>To declare a function, create a function declaration and a code block.</li>
+          <li>A function declaration contains the function keyword and the function name followed by parentheses.</li>
+          <li>A code block is surrounded by curly brakets and lists out the instructions for the function using console.log statements.</li>
+          <li>To call a function, list the name of the function where the code will be executed.</li>
+          <li>Math.floor() and Math.random() are properties that can be used together to generate a random number.</li>
         </ul>
       </section>
     </main>
